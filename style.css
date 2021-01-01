@@ -1,9 +1,53 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+html {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
-    min-height: 100vh;
-    background-color: dodgerblue;
+    font-family: Langar;
+    background: whitesmoke;
+    
+}
+
+h1 {
+    margin-top: 25px; 
+    margin-bottom: 15px; 
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.loader {
+    position: fixed;
+    top : 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50%, -50%);
+}
+
+.image-container {
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+
+.image-container img {
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+/* Media Query: Large smartphone */
+@media only screen and (max-width: 600px){
+    .image-container {
+        margin: 10px; 
+    }
 }
